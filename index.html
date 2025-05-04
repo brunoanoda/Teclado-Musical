@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teclado Musical</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Teclado Musical</h1>
+  
+  <div class="piano">
+    <button class="tecla branca" onclick="tocarSom('som1')">Snapchat</button>
+    <button class="tecla branca" onclick="tocarSom('som2')">WhatsApp</button>
+    <button class="tecla branca" onclick="tocarSom('som3')">TikTok</button>
+    <button class="tecla branca" onclick="tocarSom('som4')">Instagram</button>
+  </div>
+
+  <audio id="som1" src="som1.mp3"></audio>
+  <audio id="som2" src="som2.mp3"></audio>
+  <audio id="som3" src="som3.mp3"></audio>
+  <audio id="som4" src="som4.mp3"></audio>
+
+  <script>
+    function tocarSom(id) {
+      const som = document.getElementById(id);
+      som.currentTime = 0;
+      som.play();
+    }
+  </script>
+</body>
+</html>
