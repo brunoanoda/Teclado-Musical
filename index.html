@@ -5,39 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teclado Musical</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
 <body>
   <h1>Teclado Musical</h1>
-  
-  <div class="piano">
-    <button class="tecla branca" onclick="tocarSom('som1')"></button>
-    <button class="tecla branca" onclick="tocarSom('som2')"></button>
-    <button class="tecla branca" onclick="tocarSom('som3')"></button>
-    <button class="tecla branca" onclick="tocarSom('som4')"></button>
-    <button class="tecla branca" onclick="tocarSom('som5')"></button>
-    <button class="tecla branca" onclick="tocarSom('som6')"></button>
-    <button class="tecla branca" onclick="tocarSom('som7')"></button>
-    <button class="tecla branca" onclick="tocarSom('som8')"></button>
-    <button class="tecla branca" onclick="tocarSom('som9')"></button>
-    
-  </div>
-
-  <audio id="som1" src="som1.mp3"></audio>
-  <audio id="som2" src="som2.mp3"></audio>
-  <audio id="som3" src="som3.mp3"></audio>
-  <audio id="som4" src="som4.mp3"></audio>
-  <audio id="som5" src="som5.mp3"></audio>
-  <audio id="som6" src="som6.mp3"></audio>
-  <audio id="som7" src="som7.mp3"></audio>
-  <audio id="som8" src="som8.mp3"></audio>
-  <audio id="som9" src="som9.mp3"></audio>
-
-  <script>
-    function tocarSom(id) {
-      const som = document.getElementById(id);
-      som.currentTime = 0;
-      som.play();
-    }
-  </script>
+  <h2>Abertura de anime</h2>
+  <section class="teclado">
+    <button class="tecla tecla-som-1"><img src="./imagens/4667000.webp" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-2"><img src="./imagens/89c92c4b9d08cb5cd76f49d5ea4acc23.avif" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-3"><img src="./imagens/artworks-000070961379-se13zr-t1080x1080.jpg" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-4"><img src="./imagens/f5414be6b9942d97f307748b1dd20e03.jpg" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-5"><img src="./imagens/fruits-basket-de-natsuki-takaya-gqca_43ub.jpg" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-6"><img src="./imagens/kon_01.jpg" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-7"><img src="./imagens/maid-sama-6.jpg" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-8"><img src="./imagens/sailor-moon-cover-1024x906.jpg" alt="descrição imagem"></button>
+  <button class="tecla tecla-som-9"><img src="./imagens/shugo-chara.webp" alt="descrição imagem"></button>
+  </section>
 </body>
 </html>
+
+
+  
